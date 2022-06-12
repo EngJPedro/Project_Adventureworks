@@ -67,3 +67,21 @@ sources:
             tests:
               - unique
               - not_null            
+      - name: salesreason
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: salesreasonid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: stateprovince
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: stateprovinceid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
