@@ -1,0 +1,69 @@
+version: 2
+
+sources:
+  - name: project_adventureworks
+    description: This is a replica of the Postgres database used by our Client.
+    tables:
+      - name: salesorderdetail
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: salesorderdetailid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: salesorderheader
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: salesorderid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: product
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: productid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: address
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: addressid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: creditcard
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: creditcardid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: customer
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: customerid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: person
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: businessentityid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null            
