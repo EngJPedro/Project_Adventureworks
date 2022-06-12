@@ -7,7 +7,7 @@ with
 		/* Foreign key */
                 , rowguid
 		/* Others informations */
-                        , city
+                , city
 		        , countryregion
                 , stateprovince	
                 , postalcode
