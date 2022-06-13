@@ -8,7 +8,7 @@ with
                 , rowguid
 		/* Others informations */
                 , city
-		        , countryregion
+		, countryregion
                 , stateprovince	
                 , postalcode
 
